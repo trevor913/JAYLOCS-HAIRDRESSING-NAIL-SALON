@@ -4,7 +4,6 @@ import {
   Scissors, 
   Palette, 
   Clock, 
-  MapPin, 
   Star, 
   ArrowRight,
   Sparkles,
@@ -128,7 +127,7 @@ const Home: React.FC = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">Location</h3>
-              <p className="text-gray-600">Meru Town</p>
+              <p className="text-gray-600">Nchiru, Meru</p>
               <p className="text-gray-600">Serving Maua, Nchiru & surrounding areas</p>
             </div>
             
@@ -139,6 +138,79 @@ const Home: React.FC = () => {
               <h3 className="text-lg font-semibold text-gray-800 mb-2">Student Friendly</h3>
               <p className="text-gray-600">Special rates for</p>
               <p className="text-gray-600">Meru University students</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Find Us in Nchiru</h2>
+            <p className="text-lg text-gray-600">
+              Located in the heart of Nchiru, easily accessible from Meru University and surrounding areas
+            </p>
+          </div>
+          
+          <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.234567890123!2d37.6500000!3d0.0500000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNchiru%2C%20Meru%2C%20Kenya!5e0!3m2!1sen!2ske!4v1234567890123!5m2!1sen!2ske"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="JAYLOCS Location in Nchiru"
+              ></iframe>
+              
+              {/* Overlay with business info */}
+              <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">J</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">JAYLOCS Salon</h3>
+                    <p className="text-sm text-gray-600">Nchiru, Meru County</p>
+                    <p className="text-xs text-gray-500">Thu-Sun: 8:30AM-7PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center p-6 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-800 mb-2">Easy to Find</h3>
+              <p className="text-sm text-gray-600">Located in central Nchiru, visible from main road</p>
+            </div>
+            
+            <div className="text-center p-6 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-800 mb-2">Accessible</h3>
+              <p className="text-sm text-gray-600">Easy access by matatu, boda boda, or private transport</p>
+            </div>
+            
+            <div className="text-center p-6 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-800 mb-2">Central Location</h3>
+              <p className="text-sm text-gray-600">Perfect location serving Meru University and surrounding areas</p>
             </div>
           </div>
         </div>
